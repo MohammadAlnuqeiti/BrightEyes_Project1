@@ -26,11 +26,20 @@ $product_found="";
 
 if(isset($_SESSION['name'])){
         if(isset($_SESSION['cart'])){ 
+            
             $item_array_id = array_column($_SESSION['cart'], 'product_id');
           
             
                 if(in_array($_POST['product_id'],$item_array_id)){
+
                 // echo "<script>alert('product is already added in the cart')</script>";
+                //    echo '<div class="popup" id="popup">';
+                //    echo '<img src="../image/Cat-eye-sunglass1.jpg" alt="">';
+                //    echo '<h2>Thank You!</h2>';
+                //    echo '<p>Your details has been successfully.</p>';
+                //    echo'<button type="button"  onclick="closePopup()">OK</button>';
+                //    echo '</div>';
+
                 $product_found="product is already added in the cart";
 
             }else{

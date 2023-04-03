@@ -85,7 +85,7 @@ $data = crud::selectProduct();
 
 <!-- Banner Section Begin -->
 
-<section class="banner set-bg" data-setbg="img/banner/banner-1.jpg">
+<!-- <section class="banner set-bg" data-setbg="img/banner/banner-1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-xl-7 col-lg-8 m-auto">
@@ -115,7 +115,7 @@ $data = crud::selectProduct();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Banner Section End -->
 
 <!-- Trend Section Begin -->

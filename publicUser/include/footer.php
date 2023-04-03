@@ -65,7 +65,18 @@
             </div>
         </div>
         <!-- Search End -->
-
+        <!-- <script>
+    let submit_btn=document.getElementById("submit_btn");
+    let popup = document.getElementById("popup");
+    submit_btn.addEventListener('click' , openPopup);
+    function openPopup(event){
+        event.preventDefault();
+        popup.classList.add('open-popup');
+    }
+    function closePopup(){
+        popup.classList.add('open-popup');
+    }
+</script> -->
         <!-- Js Plugins -->
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

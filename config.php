@@ -21,7 +21,8 @@ class crud{
 
     
    
-}
+        
+    }
 // function user table
 public static function selectDataUser(){
   

@@ -267,23 +267,12 @@ $data= $db->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <!-- <div class="cart__btn update__btn">
-                        <form action="" method="post">
-                        <button type="submit" name="empty" ><span class="icon_loading">Update cart</span> </button>
-
-                        </form>
-                    </div> -->
+             
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <!-- <div class="discount__content">
-                        <h6>Discount codes</h6>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your coupon code">
-                            <button type="submit" class="site-btn">Apply</button>
-                        </form>
-                    </div> -->
+                
                 </div>
                 <div class="col-lg-4 offset-lg-2">
                     <div class="cart__total__procced">

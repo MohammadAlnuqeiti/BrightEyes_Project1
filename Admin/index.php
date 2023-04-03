@@ -41,7 +41,7 @@ $connn->execute();
 $The_numbers_of_products= $connn->fetchAll(PDO::FETCH_ASSOC);
 
 //The number of products purchased more than 5 times
-$connnn=crud::connect()->prepare("SELECT COUNT(product_id),product_id FROM order_details GROUP BY product_id HAVING COUNT(product_id) > 5");
+$connnn=crud::connect()->prepare("SELECT COUNT(product_id),product_id,products.productName FROM order_details INNER JOIN products ON order_details.product_id=products.id GROUP BY product_id HAVING COUNT(product_id) > 5");
 $connnn->execute();
 $The_numbers_of_products_repeated= $connnn->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -195,7 +195,7 @@ $The_numbers_of_products_repeated= $connnn->fetchAll(PDO::FETCH_ASSOC);
                                         <thead>
 
                                             <tr style="text-align:center">
-                                                <th>Product id</th>
+                                                <th>Product name</th>
                                                 <th>The number of purchases</th>
                                             </tr>
                                         </thead>
@@ -206,7 +206,7 @@ $The_numbers_of_products_repeated= $connnn->fetchAll(PDO::FETCH_ASSOC);
 
                                             <tr style="text-align:center">
 
-                                                <td><?php echo $value['product_id']?></td>
+                                                <td><?php echo $value['productName']?></td>
                                                 <td><?php echo $value['COUNT(product_id)']?></td>
                                          
                                             </tr>

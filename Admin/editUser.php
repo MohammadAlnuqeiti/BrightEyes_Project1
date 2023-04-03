@@ -2,7 +2,12 @@
 <?php require('../config.php'); ?>
 <?php
 $id=$_GET['id'];
+// if(gettype($_GET['id'])!==gettype(1)){
 
+//     echo "<script>window.location='index.php'</script>";
+
+
+// }
 // get data from DB use id
 $db = crud::connect()->prepare("SELECT * FROM users WHERE id= $id"); 
 $db->execute();
