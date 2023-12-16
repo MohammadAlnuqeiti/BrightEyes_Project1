@@ -15,7 +15,6 @@ $db = crud::selectProductt();
     if(isset($_GET['id'])){
     $_SESSION['id_category']=$_GET['id'];
     // $id_category= $_SESSION['id_category'];
- 
    $sql="SELECT * FROM products WHERE category=".$_SESSION['id_category'];
 
 }else{
